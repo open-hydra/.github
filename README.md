@@ -2,7 +2,7 @@
   <img src="https://avatars.githubusercontent.com/u/262371773?v=4" width="104" alt="Open Hydra organisation mark" />
 </p>
 
-<h1 align="center">OPEN HYDRA</h1>
+<h1 align="center">Hydra</h1>
 
 <p align="center">
   <strong>Open, modular multi-physics CFD.</strong><br />
@@ -58,7 +58,7 @@ The projects are grouped below by their current development status. **Pre-releas
 | [**ICE**](https://github.com/open-hydra/ICE) · [Docs](https://open-hydra.github.io/ICE/) | Eulerian modelling of dispersed condensed phases, including droplet or particle-cloud transport and interphase exchange. |
 | [**IGLOO**](https://github.com/open-hydra/IGLOO) · [Docs](https://open-hydra.github.io/IGLOO/) | Lagrangian particle dynamics through a background gas field, with drag, heat transfer, evaporation, and breakup models. |
 
-#### Workflow and mesh tools
+#### Workflow
 
 | Project | What it is for |
 |:--|:--|

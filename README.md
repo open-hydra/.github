@@ -1,6 +1,8 @@
+<!---
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/262371773?v=4" width="104" alt="Open Hydra organisation mark" />
 </p>
+-->
 
 <h1 align="center">Hydra</h1>
 
@@ -25,14 +27,16 @@
 
 ---
 
+<!--
 <p align="center">
   <img src="https://raw.githubusercontent.com/open-hydra/MOSE/main/docs/vv/images/HyShot-field.png" width="100%" alt="Hypersonic flow-field visualisation from the MOSE verification and validation suite" />
   <sub>Numerical flow-field visualisation · <a href="https://github.com/open-hydra/MOSE">MOSE</a></sub>
 </p>
+-->
 
 ## Engineering the physics, not just the flow
 
-Open Hydra is an ecosystem of open-source scientific solvers and workflow tools built around **multi-block numerical simulation**. Its projects address different parts of a multiphysics problem: preparing solver inputs, resolving compressible gas flows, and modelling the thermal, radiative, and particulate phenomena that interact with them.
+Hydra is an ecosystem of open-source scientific solvers and workflow tools built around **multi-block numerical simulation**. Its projects address different parts of a multiphysics problem: preparing solver inputs, resolving compressible gas flows, and modelling the thermal, radiative, and particulate phenomena that interact with them.
 
 The suite is **modular by design**. Each repository focuses on a specific job, with its own build instructions, documentation, and supported physics. Use the component that fits your problem, then combine tools where the relevant interfaces and coupling modes are supported.
 
@@ -94,6 +98,15 @@ Not sure where to begin? Start with the physics or workflow you need:
 
 > **Development status:** [MOSE-GPU](https://github.com/open-hydra/MOSE-GPU) and [MORPH](https://github.com/open-hydra/MORPH) are under development and have not been released. They are not production components and are therefore not listed as current solver/workflow choices.
 
+## Built for computational science
+
+- **Structured multi-block meshes** across the core solver family.
+- **Modern Fortran** at the heart of the numerical solvers, with Python tools in the workflow ecosystem.
+- **Parallel computing** through OpenMP and, where supported, MPI and hybrid execution.
+- **GPU computing work in progress:** MOSE-GPU is an NVIDIA-focused implementation under development; it has not yet been released and is not a production option.
+- **A broad physics palette** spanning compressible flow, turbulence, finite-rate chemistry, soot, real-fluid effects, solid conduction, radiation, and dispersed phases.
+- **Verification-oriented projects**, with dedicated test cases and technical documentation in the individual repositories.
+
 ## A connected workflow
 
 ```mermaid
@@ -111,17 +124,27 @@ flowchart TB
 
 <sub>This is a conceptual map of the project landscape, not a claim that every component is directly coupled to every other one. Supported inputs, data exchange, and coupling direction are solver-specific; see the documentation for the workflow you intend to run.</sub>
 
-## Built for computational science
+## User-friendly workflow
 
-- **Structured multi-block meshes** across the core solver family.
-- **Modern Fortran** at the heart of the numerical solvers, with Python tools in the workflow ecosystem.
-- **Parallel computing** through OpenMP and, where supported, MPI and hybrid execution.
-- **GPU computing work in progress:** MOSE-GPU is an NVIDIA-focused implementation under development; it has not yet been released and is not a production option.
-- **A broad physics palette** spanning compressible flow, turbulence, finite-rate chemistry, soot, real-fluid effects, solid conduction, radiation, and dispersed phases.
-- **Verification-oriented projects**, with dedicated test cases and technical documentation in the individual repositories.
+-**INI files** are used to set everything up in a modular way, from the phase properties to the solver specifics.  
+-**Graphical user interface** to help with the preprocessing work.
 
-## See it in action
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/open-hydra/ATLAS/main/docs/user-guide/images/gui-phases.png"
+    width="75%"
+    alt="ATLAS phase setup interface"
+  />
+  <br><br>
+  <div align="center">
+    <sub>
+      Graphical user interface for the preprocessing work ·
+      <a href="https://github.com/open-hydra/ATLAS">ATLAS</a>
+    </sub>
+  </div>
+</div>
 
+<!--
 <table>
   <tr>
     <td width="33%" align="center">
@@ -147,6 +170,7 @@ flowchart TB
     </td>
   </tr>
 </table>
+-->
 
 ## Get started
 
@@ -179,6 +203,6 @@ Ideas, bug reports, scientific feedback, and code contributions are welcome. The
 The projects listed here currently declare the **GNU General Public License v3.0 (GPL-3.0)**. Please consult the `LICENSE` file in the individual repository for the terms that apply to the code you use.
 
 <p align="center">
-  <strong>Open Hydra</strong><br />
+  <strong>Hydra</strong><br />
   <sub>Open tools. Reproducible physics. Better simulations.</sub>
 </p>
